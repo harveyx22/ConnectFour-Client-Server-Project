@@ -1,3 +1,7 @@
+/**
+ * Connect4 contains game logic.
+ */
+
 #ifndef SERVER_CONNECT4_H
 #define SERVER_CONNECT4_H
 

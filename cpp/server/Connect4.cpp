@@ -1,3 +1,7 @@
+/**
+ * Connect4 contains game logic.
+ */
+
 #include <string>
 #include <sstream>
 #include <iostream>

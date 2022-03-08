@@ -1,10 +1,13 @@
+/**
+ * This class implements the various RPC calls.
+ */
+
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
 #include "RPCImpl.h"
 #include "Connect4.h"
 #include "HighestScore.h"
-#include <iostream>
 
 using namespace std;
 static HighestScore highest = HighestScore();
@@ -12,20 +15,25 @@ double gamesPlayed, wins;
 //extern int totalGamesPlayed;
 extern pthread_mutex_t myMutex;
 
+/**
+ * Constructor,
+ * @param socket: To connect on.
+ */
 RPCImpl::RPCImpl(int socket) {
     m_socket = socket;
 }
 
+/**
+ * Default destructor.
+ */
 RPCImpl::~RPCImpl() = default;
 
-/*
- * ParseTokens splits a string by semicolons and adds all strings to the input
- * vector.
- *
- * Input:
- *      buffer: The string to be split
- *      a: The vector to have strings added to
- */
+ /**
+  * ParseTokens splits a string by semicolons and adds all strings to the input
+  * vector.
+  * @param buffer: The string to be split.
+  * @param a: The vector to have strings added to.
+  */
 void RPCImpl::parseTokens(char* buffer, vector<string>& a) {
     char* token;
     char* rest = (char*)buffer;
@@ -35,20 +43,24 @@ void RPCImpl::parseTokens(char* buffer, vector<string>& a) {
     }
 }
 
+/**
+ * Sends response to client.
+ * @param buffer: String response to send.
+ */
 void RPCImpl::sendResponse(char* buffer) const {
     int nlen = (int) strlen(buffer);
     buffer[nlen] = 0;
     send(this->m_socket, buffer, (int) strlen(buffer) + 1, 0);
 }
 
-/*
+/**
  * ProcessRPC will examine buffer and will essentially control the server
- * processes.
+ * all processes.
  */
 void RPCImpl::processRPC() {
-    char buffer[1024] = { 0 };
-    vector<string> arrayTokens;
-    const int RPC_TOKEN = 0;
+    char buffer[1024] = { 0 };  // Holds messages.
+    vector<string> arrayTokens; // Array of message tokens
+    const int RPC_TOKEN = 0;    // RPC token is always first.
     int valread;
     bool bConnected = false;
     bool bContinue = true;
@@ -74,6 +86,7 @@ void RPCImpl::processRPC() {
 
         string strRPC = arrayTokens[RPC_TOKEN];
 
+        // Check for RPC.
         if (!bConnected && (strRPC == "connect")) {
             bConnected = processConnectRPC(arrayTokens);
         } else if (bConnected && strRPC == "playconnect4") {
@@ -95,12 +108,11 @@ void RPCImpl::processRPC() {
     }
 }
 
-/*
- * Processes the "connect" RPC. Returns true if login is valid.
- *
- * Input:
- *      - arrayTokens: tokens received from client (Ex.: "connect," "USERNAME,"
- *      and "PASSWORD1234."
+/**
+ * Processes the "connect" RPC.
+ * @param arrayTokens: tokens received from client (Ex: "connect," "USERNAME,"
+ * and "PASSWORD1234."
+ * @return True if login is valid.
  */
 bool RPCImpl::processConnectRPC(vector<string>& arrayTokens) const {
     const int USERNAME_TOKEN = 1;
@@ -132,6 +144,12 @@ bool RPCImpl::processConnectRPC(vector<string>& arrayTokens) const {
     else return false;
 }
 
+/**
+ * Processes playConnect4RPC.
+ * @param arrayTokens: Tokens received from client (Ex: "1" or "2" for who,
+ * client or computer, should take first turn).
+ * @return New Connect4 game object.
+ */
 Connect4* RPCImpl::playConnect4RPC(vector<string>& arrayTokens)  {
     // Get first turn token
     const int TURN_TOKEN = 1;
@@ -152,8 +170,9 @@ Connect4* RPCImpl::playConnect4RPC(vector<string>& arrayTokens)  {
     // Send response back on our socket.
     sendResponse(szBuffer);
 
-    gamesPlayed++;
     // Mutex code to increment the number of games played by each client.
+    gamesPlayed++;
+
 //    pthread_mutex_lock(&myMutex);
 //    totalGamesPlayed++;
 //    pthread_mutex_unlock(&myMutex);
@@ -161,6 +180,11 @@ Connect4* RPCImpl::playConnect4RPC(vector<string>& arrayTokens)  {
     return game;
 }
 
+/**
+ * Processes playPieceRPC.
+ * @param game: Game object to use.
+ * @param arrayTokens: Tokens received from client (Ex. column choice (1-7)).
+ */
 void RPCImpl::playPieceRPC(Connect4* game, vector<string>& arrayTokens) const {
     // Get column choice token
     const int COLUMN_TOKEN = 1;
@@ -206,6 +230,9 @@ void RPCImpl::playPieceRPC(Connect4* game, vector<string>& arrayTokens) const {
     sendResponse(szBuffer);
 }
 
+/**
+ * Processes checkStatsRPC.
+ */
 void RPCImpl::checkStatsRPC() const {
     //string totalGames = to_string(totalGamesPlayed).append(";");
     string stats = to_string(gamesPlayed).append(";");
@@ -218,6 +245,7 @@ void RPCImpl::checkStatsRPC() const {
     // Send response back on our socket
     sendResponse(szBuffer);
 
+    // Lock code while in use.
     pthread_mutex_lock(&myMutex);
     if ((wins/gamesPlayed) > (highest.wins)/(highest.gamesPlayed)){
         highest.wins = wins;
@@ -228,12 +256,13 @@ void RPCImpl::checkStatsRPC() const {
         gamesPlayed = 0;
         wins = 0;
     }
+    // Unlock.
     pthread_mutex_unlock(&myMutex);
 }
 
-/*
+/**
  * Processes disconnectRPC.
-*/
+ */
 void RPCImpl::processDisconnectRPC() const {
     char szBuffer[16];
     strcpy(szBuffer, "1;");

@@ -1,10 +1,9 @@
-//
-// Created by Minh Vu on 3/7/22.
-//
+/**
+ * Mutex protected class containing global variables.
+ */
 
 #ifndef SERVER_HIGHESTSCORE_H
 #define SERVER_HIGHESTSCORE_H
-
 
 class HighestScore {
 public:

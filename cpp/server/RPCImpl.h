@@ -1,3 +1,7 @@
+/**
+ * This class implements the various RPC calls.
+ */
+
 #pragma once
 #include <string>
 #include <vector>

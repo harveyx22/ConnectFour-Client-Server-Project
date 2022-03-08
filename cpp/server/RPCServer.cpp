@@ -1,14 +1,7 @@
-/* This is a very simple example of a server that will listen to a client
- * server, then run the various RPCs that between the server and client.
- *
- * Version 1 will have the server handle one client at a time. The server will:
- *      - Wait for connection from client
- *      - Process the Connect API once connected
- *      - Process all RPC requests until the client sends a disconnect RPC
- *      - This initial server will handle 2 RPC's:
- *          - Connect
- *          - Disconnect
-*/
+/**
+ * Class containing code to start the server, listen for client, and
+ * initialize threads.
+ */
 
 #include <unistd.h>
 #include <cstdio>
@@ -23,8 +16,10 @@
 
 using namespace std;
 
-// A normal C function that is executed as a thread
-// when its name is specified in pthread_create()
+/**
+ * A normal C function that is executed as a thread when its name is specified
+ * in pthread_create()
+ */
 void* initThread(void* vargp) {
     sleep(1);
 
@@ -36,11 +31,10 @@ void* initThread(void* vargp) {
     return nullptr;
 }
 
-/*
- * Constructor for RPCServer
- * Input:
- *      serverIP: The IP of the server
- *      port: The port the server will be listening on
+/**
+ * Constructor for RPCServer.
+ * @param serverIP: The IP of the server
+ * @param port: The port the server will be listening on
  */
 RPCServer::RPCServer(const char* serverIP, int port) {
     int j = 0;
@@ -48,14 +42,14 @@ RPCServer::RPCServer(const char* serverIP, int port) {
     m_port = port;
 }
 
-/*
- * Destructor
+/**
+ * Default destructor.
  */
 RPCServer::~RPCServer() = default;
 
-/*
+/**
  * StartServer will create a server on a port that was passed in, and create a
- * socket
+ * socket.
  */
 void RPCServer::StartServer() {
     int opt = 1;
@@ -91,8 +85,8 @@ void RPCServer::StartServer() {
     }
 }
 
-/*
- * Will accept a new connection by listening on its address
+/**
+ * Will accept a new connection by listening on its address.
  */
 void RPCServer::ListenForClient() {
     int addrlen = sizeof(m_address);
