@@ -6,6 +6,7 @@
 #include <iostream>
 
 using namespace std;
+int gamesPlayed, wins, loss;
 extern int totalGamesPlayed;
 extern pthread_mutex_t myMutex;
 
@@ -149,6 +150,7 @@ Connect4* RPCImpl::playConnect4RPC(vector<string>& arrayTokens)  {
     // Send response back on our socket.
     sendResponse(szBuffer);
 
+    gamesPlayed++;
     // Mutex code to increment the number of games played by each client.
     pthread_mutex_lock(&myMutex);
     totalGamesPlayed++;
@@ -171,9 +173,11 @@ void RPCImpl::playPieceRPC(Connect4* game, vector<string>& arrayTokens) const {
 
     else {
         // Check if client wins.
-        if (game->checkFour(true))
+        if (game->checkFour(true)){
             // If client wins
             response = 9;
+            wins++;
+        }
         else if (game->fullBoard())
             // If board is full.
             response = 11;
@@ -181,8 +185,10 @@ void RPCImpl::playPieceRPC(Connect4* game, vector<string>& arrayTokens) const {
             // Computer moves. Save move to response.
             response = game->computerDrop();
             // Check if computer wins.
-            if (game->checkFour(false))
+            if (game->checkFour(false)){
                 response = 10;
+                loss++;
+            }
         }
     }
 
@@ -200,13 +206,17 @@ void RPCImpl::playPieceRPC(Connect4* game, vector<string>& arrayTokens) const {
 }
 
 void RPCImpl::checkStatsRPC() const {
-    string totalGames = to_string(totalGamesPlayed).append(";");
+    //string totalGames = to_string(totalGamesPlayed).append(";");
+    string stats = to_string(gamesPlayed).append(";");
+    stats.append(to_string(wins)).append(";");
+    stats.append(to_string(loss)).append(";");
 
     char szBuffer[16];
-    strcpy(szBuffer, totalGames.c_str());
+    strcpy(szBuffer, stats.c_str());
 
     // Send response back on our socket
     sendResponse(szBuffer);
+    gamesPlayed = 0;
 }
 
 /*

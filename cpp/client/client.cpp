@@ -111,12 +111,16 @@ int main(int argc, char const *argv[]) {
     // checkStatsRPC section
     // currently it displays the total games from all clients
     // still need work to display the total games by that particular client
-    int gamesPlayed;
+    int gamesPlayed, wins, loss;
     string checkStatsRPC;
     checkStatsRPC.append("checkstats;");
     sendRPC(checkStatsRPC, sock, arrayTokens);
     gamesPlayed = stoi(arrayTokens[0]);
+    wins = stoi(arrayTokens[1]);
+    loss = stoi(arrayTokens[2]);
     cout << "Total number games played: " << gamesPlayed << endl;
+    cout << "Total wins: " << wins << endl;
+    cout << "Total loss: " << loss << endl;
 
     // Do a disconnect Message
     if (bConnect) {

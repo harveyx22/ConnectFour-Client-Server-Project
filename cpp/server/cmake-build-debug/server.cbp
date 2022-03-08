@@ -8,94 +8,94 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug"/>
+				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug"/>
+				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug"/>
+				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server">
-				<Option output="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug/server.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug"/>
+				<Option output="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server/fast">
-				<Option output="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug/server.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug"/>
+				<Option output="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/peter/Documents/Seattle\ University/Computing\ Systems\ II/Group\ Project/Milestone\ 2/client-server-project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/Connect4.cpp">
+		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/Connect4.h">
+		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/RPCServer.cpp">
+		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/RPCServer.h">
+		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/main.cpp">
+		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/main.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/CMakeLists.txt">
+		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
