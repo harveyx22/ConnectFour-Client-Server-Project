@@ -31,7 +31,7 @@ void* initThread(void* vargp) {
     int socket = *(int *) vargp;
     auto *rpcImplObj = new RPCImpl(socket);
     rpcImplObj->processRPC();   // This will go until client disconnects;
-    printf("Done with thread");
+    printf("Done with thread\n");
 
     return nullptr;
 }

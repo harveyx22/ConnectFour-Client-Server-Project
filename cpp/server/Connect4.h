@@ -14,7 +14,6 @@ public:
 
 private:
     char board[6][7];
-
     void restart();
 };
 

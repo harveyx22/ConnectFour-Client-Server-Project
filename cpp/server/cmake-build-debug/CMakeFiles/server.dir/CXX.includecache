@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.cpp
+string
+-
+sstream
+-
+iostream
+-
+Connect4.h
 /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h
+
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h
+
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/HighestScore.h
 
 /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCImpl.cpp
 cstdio
@@ -19,6 +31,8 @@ RPCImpl.h
 /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCImpl.h
 Connect4.h
 /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h
+HighestScore.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/HighestScore.h
 iostream
 -
 

@@ -6,6 +6,7 @@ CMakeFiles/server.dir/Connect4.cpp.o
  /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h
 CMakeFiles/server.dir/RPCServer.cpp.o
  /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h
+ /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/HighestScore.h
  /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCImpl.cpp
  /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCImpl.h
  /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.cpp

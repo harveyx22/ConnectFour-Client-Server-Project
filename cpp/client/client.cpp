@@ -120,7 +120,7 @@ int main(int argc, char const *argv[]) {
     loss = stoi(arrayTokens[2]);
     cout << "Total number games played: " << gamesPlayed << endl;
     cout << "Total wins: " << wins << endl;
-    cout << "Total loss: " << loss << endl;
+    cout << "Win rate: " << loss << "%" << endl;
 
     // Do a disconnect Message
     if (bConnect) {

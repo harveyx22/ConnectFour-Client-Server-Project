@@ -3,11 +3,13 @@
 #include <cstring>
 #include "RPCImpl.h"
 #include "Connect4.h"
+#include "HighestScore.h"
 #include <iostream>
 
 using namespace std;
-int gamesPlayed, wins, loss;
-extern int totalGamesPlayed;
+static HighestScore highest = HighestScore();
+double gamesPlayed, wins;
+//extern int totalGamesPlayed;
 extern pthread_mutex_t myMutex;
 
 RPCImpl::RPCImpl(int socket) {
@@ -152,9 +154,9 @@ Connect4* RPCImpl::playConnect4RPC(vector<string>& arrayTokens)  {
 
     gamesPlayed++;
     // Mutex code to increment the number of games played by each client.
-    pthread_mutex_lock(&myMutex);
-    totalGamesPlayed++;
-    pthread_mutex_unlock(&myMutex);
+//    pthread_mutex_lock(&myMutex);
+//    totalGamesPlayed++;
+//    pthread_mutex_unlock(&myMutex);
 
     return game;
 }
@@ -187,7 +189,6 @@ void RPCImpl::playPieceRPC(Connect4* game, vector<string>& arrayTokens) const {
             // Check if computer wins.
             if (game->checkFour(false)){
                 response = 10;
-                loss++;
             }
         }
     }
@@ -209,16 +210,25 @@ void RPCImpl::checkStatsRPC() const {
     //string totalGames = to_string(totalGamesPlayed).append(";");
     string stats = to_string(gamesPlayed).append(";");
     stats.append(to_string(wins)).append(";");
-    stats.append(to_string(loss)).append(";");
+    stats.append(to_string((wins/gamesPlayed) * 100)).append(";");
 
     char szBuffer[16];
     strcpy(szBuffer, stats.c_str());
 
     // Send response back on our socket
     sendResponse(szBuffer);
-    gamesPlayed = 0;
-    wins = 0;
-    loss = 0;
+
+    pthread_mutex_lock(&myMutex);
+    if ((wins/gamesPlayed) > (highest.wins)/(highest.gamesPlayed)){
+        highest.wins = wins;
+        highest.gamesPlayed = gamesPlayed;
+        highest.winRate = (wins/gamesPlayed)*100;
+    }
+    else {
+        gamesPlayed = 0;
+        wins = 0;
+    }
+    pthread_mutex_unlock(&myMutex);
 }
 
 /*
