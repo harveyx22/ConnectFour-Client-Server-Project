@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.qEeJnerVTC
+CMAKE_SOURCE_DIR = /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.qEeJnerVTC/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -68,42 +68,42 @@ include CMakeFiles/server.dir/flags.make
 
 CMakeFiles/server.dir/main.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.qEeJnerVTC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/main.cpp.o -c /tmp/tmp.qEeJnerVTC/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/main.cpp.o -c /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/main.cpp
 
 CMakeFiles/server.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.qEeJnerVTC/main.cpp > CMakeFiles/server.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/main.cpp > CMakeFiles/server.dir/main.cpp.i
 
 CMakeFiles/server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.qEeJnerVTC/main.cpp -o CMakeFiles/server.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/main.cpp -o CMakeFiles/server.dir/main.cpp.s
 
 CMakeFiles/server.dir/RPCServer.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/RPCServer.cpp.o: ../RPCServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.qEeJnerVTC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/RPCServer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/RPCServer.cpp.o -c /tmp/tmp.qEeJnerVTC/RPCServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/RPCServer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/RPCServer.cpp.o -c /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.cpp
 
 CMakeFiles/server.dir/RPCServer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/RPCServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.qEeJnerVTC/RPCServer.cpp > CMakeFiles/server.dir/RPCServer.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.cpp > CMakeFiles/server.dir/RPCServer.cpp.i
 
 CMakeFiles/server.dir/RPCServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/RPCServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.qEeJnerVTC/RPCServer.cpp -o CMakeFiles/server.dir/RPCServer.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.cpp -o CMakeFiles/server.dir/RPCServer.cpp.s
 
 CMakeFiles/server.dir/Connect4.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/Connect4.cpp.o: ../Connect4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.qEeJnerVTC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/Connect4.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Connect4.cpp.o -c /tmp/tmp.qEeJnerVTC/Connect4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/Connect4.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Connect4.cpp.o -c /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.cpp
 
 CMakeFiles/server.dir/Connect4.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Connect4.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.qEeJnerVTC/Connect4.cpp > CMakeFiles/server.dir/Connect4.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.cpp > CMakeFiles/server.dir/Connect4.cpp.i
 
 CMakeFiles/server.dir/Connect4.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Connect4.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.qEeJnerVTC/Connect4.cpp -o CMakeFiles/server.dir/Connect4.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.cpp -o CMakeFiles/server.dir/Connect4.cpp.s
 
 # Object files for target server
 server_OBJECTS = \
@@ -119,7 +119,7 @@ server: CMakeFiles/server.dir/RPCServer.cpp.o
 server: CMakeFiles/server.dir/Connect4.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.qEeJnerVTC/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -131,6 +131,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd /tmp/tmp.qEeJnerVTC/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/tmp.qEeJnerVTC /tmp/tmp.qEeJnerVTC /tmp/tmp.qEeJnerVTC/cmake-build-debug /tmp/tmp.qEeJnerVTC/cmake-build-debug /tmp/tmp.qEeJnerVTC/cmake-build-debug/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/server.dir/depend
 

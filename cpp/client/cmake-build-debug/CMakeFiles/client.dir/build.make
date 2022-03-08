@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.H5ibu7rBET
+CMAKE_SOURCE_DIR = /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.H5ibu7rBET/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/client.dir/depend.make
@@ -68,29 +68,29 @@ include CMakeFiles/client.dir/flags.make
 
 CMakeFiles/client.dir/client.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/client.cpp.o: ../client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.H5ibu7rBET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/client.cpp.o -c /tmp/tmp.H5ibu7rBET/client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/client.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/client.cpp.o -c /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/client.cpp
 
 CMakeFiles/client.dir/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.H5ibu7rBET/client.cpp > CMakeFiles/client.dir/client.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/client.cpp > CMakeFiles/client.dir/client.cpp.i
 
 CMakeFiles/client.dir/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.H5ibu7rBET/client.cpp -o CMakeFiles/client.dir/client.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/client.cpp -o CMakeFiles/client.dir/client.cpp.s
 
 CMakeFiles/client.dir/Connect4.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/Connect4.cpp.o: ../Connect4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.H5ibu7rBET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/Connect4.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/Connect4.cpp.o -c /tmp/tmp.H5ibu7rBET/Connect4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/client.dir/Connect4.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/client.dir/Connect4.cpp.o -c /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/Connect4.cpp
 
 CMakeFiles/client.dir/Connect4.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/Connect4.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.H5ibu7rBET/Connect4.cpp > CMakeFiles/client.dir/Connect4.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/Connect4.cpp > CMakeFiles/client.dir/Connect4.cpp.i
 
 CMakeFiles/client.dir/Connect4.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/Connect4.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.H5ibu7rBET/Connect4.cpp -o CMakeFiles/client.dir/Connect4.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/Connect4.cpp -o CMakeFiles/client.dir/Connect4.cpp.s
 
 # Object files for target client
 client_OBJECTS = \
@@ -104,7 +104,7 @@ client: CMakeFiles/client.dir/client.cpp.o
 client: CMakeFiles/client.dir/Connect4.cpp.o
 client: CMakeFiles/client.dir/build.make
 client: CMakeFiles/client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.H5ibu7rBET/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -116,6 +116,6 @@ CMakeFiles/client.dir/clean:
 .PHONY : CMakeFiles/client.dir/clean
 
 CMakeFiles/client.dir/depend:
-	cd /tmp/tmp.H5ibu7rBET/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/tmp.H5ibu7rBET /tmp/tmp.H5ibu7rBET /tmp/tmp.H5ibu7rBET/cmake-build-debug /tmp/tmp.H5ibu7rBET/cmake-build-debug /tmp/tmp.H5ibu7rBET/cmake-build-debug/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug /Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/client.dir/depend
 

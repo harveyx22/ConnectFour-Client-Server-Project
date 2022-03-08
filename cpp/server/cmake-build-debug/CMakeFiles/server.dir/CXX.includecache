@@ -6,33 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/tmp/tmp.qEeJnerVTC/Connect4.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h
 
-/tmp/tmp.qEeJnerVTC/HighestScore.h
-
-/tmp/tmp.qEeJnerVTC/RPCImpl.cpp
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCImpl.cpp
 cstdio
 -
 cstdlib
 -
 cstring
 -
+cmath
+-
 RPCImpl.h
-/tmp/tmp.qEeJnerVTC/RPCImpl.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCImpl.h
 Connect4.h
-/tmp/tmp.qEeJnerVTC/Connect4.h
-HighestScore.h
-/tmp/tmp.qEeJnerVTC/HighestScore.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h
 
-/tmp/tmp.qEeJnerVTC/RPCImpl.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCImpl.h
 string
 -
 vector
 -
 Connect4.h
-/tmp/tmp.qEeJnerVTC/Connect4.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h
 
-/tmp/tmp.qEeJnerVTC/RPCServer.cpp
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.cpp
 unistd.h
 -
 cstdio
@@ -48,11 +46,11 @@ vector
 iterator
 -
 RPCServer.h
-/tmp/tmp.qEeJnerVTC/RPCServer.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.h
 RPCImpl.cpp
-/tmp/tmp.qEeJnerVTC/RPCImpl.cpp
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCImpl.cpp
 
-/tmp/tmp.qEeJnerVTC/RPCServer.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.h
 unistd.h
 -
 cstdio

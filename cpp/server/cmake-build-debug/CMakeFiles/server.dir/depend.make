@@ -6,7 +6,6 @@ CMakeFiles/server.dir/Connect4.cpp.o: \
  ../Connect4.h
 CMakeFiles/server.dir/RPCServer.cpp.o: \
  ../Connect4.h \
- ../HighestScore.h \
  ../RPCImpl.cpp \
  ../RPCImpl.h \
  ../RPCServer.cpp \

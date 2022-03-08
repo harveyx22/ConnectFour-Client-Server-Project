@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/Connect4.cpp
+iostream
+-
+Connect4.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/Connect4.h
+
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/Connect4.h
+string
+-
+vector
+-
+
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/client.cpp
+cstdio
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+cstring
+-
+vector
+-
+iterator
+-
+iostream
+-
+random
+-
+Connect4.h
+/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/Connect4.h
+
