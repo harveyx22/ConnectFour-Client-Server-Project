@@ -130,12 +130,6 @@ int main(int argc, char const *argv[]) {
     // Do a disconnect Message
     if (bConnect) {
 
-        string exit;
-        while (exit != "EXIT") {
-            cout << "\nType 'EXIT' to disconnect" << endl;
-            cin >> exit;
-        }
-
         const char *disconnectRPC = "disconnect;";
         sendRPC(disconnectRPC, sock, arrayTokens);
 
