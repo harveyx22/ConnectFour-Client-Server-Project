@@ -217,6 +217,8 @@ void RPCImpl::checkStatsRPC() const {
     // Send response back on our socket
     sendResponse(szBuffer);
     gamesPlayed = 0;
+    wins = 0;
+    loss = 0;
 }
 
 /*
