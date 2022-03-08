@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++ -pthread -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/server.dir/main.cpp.o CMakeFiles/server.dir/RPCServer.cpp.o CMakeFiles/server.dir/Connect4.cpp.o -o server 
+/usr/bin/c++ -pthread -g CMakeFiles/server.dir/main.cpp.o CMakeFiles/server.dir/RPCServer.cpp.o CMakeFiles/server.dir/Connect4.cpp.o -o server 

@@ -1,3 +1,9 @@
+/**
+ * This is a very simple example of a client that will connect to a server,
+ * then send and receive various RPCs with the server. The Connect 4 game is
+ * user in this example.
+ */
+
 #include <cstdio>
 #include <sys/socket.h>
 #include <arpa/inet.h>
@@ -16,10 +22,8 @@ void sendRPC(const string &RPC, const int &sock, vector<string> &arrayTokens);
 void ParseTokens(char *buffer, vector<string> &a);
 
 /**
- * TODO
- * @param argc
- * @param argv
- * @return
+ * This is the main function of the client side. Runs the Connect4 program.
+ * @param argv: Command line arguments
  */
 int main(int argc, char const *argv[]) {
     // Takes first command line argument: IP address of the server
@@ -61,8 +65,7 @@ int main(int argc, char const *argv[]) {
     // PlayConnect4RPC Section
     bool continuePlaying = true;
     while (continuePlaying && bConnect) {
-        auto *game = new Connect4();
-
+        // Who will go first?
         int turnChoice;
         do {
             cout << "\nEnter 1 to take the first turn, or enter 2 for the "
@@ -74,10 +77,11 @@ int main(int argc, char const *argv[]) {
         string playConnect4RPC;
         playConnect4RPC.append("playconnect4;").append(to_string(turnChoice));
 
+        // Send play game RPC.
         sendRPC(playConnect4RPC, sock, arrayTokens);
 
         // PlayPieceRPC Section
-        // gameStatus will be what is returned from the server after the RPC call.
+        // gameStatus will be returned from the server after the RPC call.
         // 1-7: The computer's column choice returned from the RPC call
         // 8: Player has selected a column that is full
         // 9: Player has won
@@ -85,15 +89,20 @@ int main(int argc, char const *argv[]) {
         // 11: Board is full
         int gameStatus;
         do {
+            // Display board.
             Connect4::displayBoard(arrayTokens[0]);
+
+            // Get column choice.
             string columnChoice = Connect4::getColumnChoice();
 
             // Create string to send to server.
             string playPieceRPC;
             playPieceRPC.append("playpiece;").append(columnChoice).append(";");
 
+            // Send play piece RPC.
             sendRPC(playPieceRPC, sock, arrayTokens);
 
+            // Grab game status from arrayTokens.
             gameStatus = stoi(arrayTokens[1]);
 
             if (gameStatus == 8)
@@ -103,8 +112,10 @@ int main(int argc, char const *argv[]) {
 
         } while (gameStatus >= 1 && gameStatus <= 8);
 
+        // Display board.
         Connect4::displayBoard(arrayTokens[0]);
 
+        // Game repeat loop.
         continuePlaying = Connect4::gameOver(gameStatus);
     }
 

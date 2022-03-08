@@ -4,8 +4,8 @@
 using namespace std;
 
 /**
- * TODO
- * @param board
+ * Prints the board.
+ * @param board: String of board to print.
  */
 void Connect4::displayBoard(const string &board) {
     int rows = 6, columns = 7;
@@ -22,8 +22,8 @@ void Connect4::displayBoard(const string &board) {
 }
 
 /**
- * TODO
- * @return
+ * Gets column choice from client.
+ * @return String of column choice.
  */
 string Connect4::getColumnChoice() {
     int columnChoice;
@@ -37,9 +37,9 @@ string Connect4::getColumnChoice() {
 }
 
 /**
- * TODO
- * @param gameStatus
- * @return
+ * Checks for game over scenario.
+ * @param gameStatus: Determines game over scenario.
+ * @return True to play again, false otherwise.
  */
 bool Connect4::gameOver(int gameStatus) {
     switch (gameStatus) {

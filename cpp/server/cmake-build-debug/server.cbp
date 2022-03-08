@@ -8,94 +8,94 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
+				<Option working_dir="/tmp/tmp.qEeJnerVTC/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
+				<Option working_dir="/tmp/tmp.qEeJnerVTC/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server">
-				<Option output="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
+				<Option output="/tmp/tmp.qEeJnerVTC/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.qEeJnerVTC/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server/fast">
-				<Option output="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug"/>
+				<Option output="/tmp/tmp.qEeJnerVTC/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.qEeJnerVTC/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/8/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/tmp/tmp.qEeJnerVTC/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j64 -f &quot;/tmp/tmp.qEeJnerVTC/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.cpp">
+		<Unit filename="/tmp/tmp.qEeJnerVTC/Connect4.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/Connect4.h">
+		<Unit filename="/tmp/tmp.qEeJnerVTC/Connect4.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.cpp">
+		<Unit filename="/tmp/tmp.qEeJnerVTC/RPCServer.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/RPCServer.h">
+		<Unit filename="/tmp/tmp.qEeJnerVTC/RPCServer.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/main.cpp">
+		<Unit filename="/tmp/tmp.qEeJnerVTC/main.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/server/CMakeLists.txt">
+		<Unit filename="/tmp/tmp.qEeJnerVTC/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
