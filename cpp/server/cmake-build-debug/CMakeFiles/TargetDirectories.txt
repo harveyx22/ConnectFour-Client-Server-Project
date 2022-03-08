@@ -1,0 +1,3 @@
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/cmake-build-debug/CMakeFiles/server.dir

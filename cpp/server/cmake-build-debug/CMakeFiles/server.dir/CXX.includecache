@@ -1,0 +1,80 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/Connect4.cpp
+string
+-
+sstream
+-
+iostream
+-
+Connect4.h
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/Connect4.h
+
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/Connect4.h
+
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/RPCImpl.cpp
+cstdio
+-
+cstdlib
+-
+cstring
+-
+RPCImpl.h
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/RPCImpl.h
+Connect4.h
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/Connect4.h
+iostream
+-
+
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/RPCImpl.h
+string
+-
+vector
+-
+Connect4.h
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/Connect4.h
+
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/RPCServer.cpp
+unistd.h
+-
+cstdio
+-
+sys/socket.h
+-
+cstdlib
+-
+netinet/in.h
+-
+vector
+-
+iterator
+-
+RPCServer.h
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/RPCServer.h
+RPCImpl.cpp
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/RPCImpl.cpp
+
+/cygdrive/c/Users/peter/Documents/Seattle University/Computing Systems II/Group Project/Milestone 2/client-server-project/cpp/server/RPCServer.h
+unistd.h
+-
+cstdio
+-
+sys/socket.h
+-
+cstdlib
+-
+netinet/in.h
+-
+cstring
+-
+vector
+-
+iterator
+-
+

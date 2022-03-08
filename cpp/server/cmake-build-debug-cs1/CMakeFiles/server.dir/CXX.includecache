@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/st/pharvey/cpsc5042/Server/tmp/tmp.iVaCBSaTTX/Connect4.cpp
+string
+-
+sstream
+-
+iostream
+-
+Connect4.h
+/home/st/pharvey/cpsc5042/Server/tmp/tmp.iVaCBSaTTX/Connect4.h
+
+/home/st/pharvey/cpsc5042/Server/tmp/tmp.iVaCBSaTTX/Connect4.h
+

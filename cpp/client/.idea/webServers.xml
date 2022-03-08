@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c4b7a9d1-5092-4990-805e-849933ef782c" name="SU" url="http://cs1.seattleu.edu">
+        <fileTransfer rootFolder="/home/st/nhadley" accessType="SFTP" host="cs1.seattleu.edu" port="22" sshConfigId="d75215b9-b3f7-4239-909f-0f011af1515d" sshConfig="nhadley@cs1.seattleu.edu:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

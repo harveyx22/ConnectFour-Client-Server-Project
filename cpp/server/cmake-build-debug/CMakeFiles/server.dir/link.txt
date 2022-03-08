@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -pthread -g  -Wl,--enable-auto-import CMakeFiles/server.dir/main.cpp.o CMakeFiles/server.dir/RPCServer.cpp.o CMakeFiles/server.dir/Connect4.cpp.o  -o server.exe -Wl,--out-implib,libserver.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
