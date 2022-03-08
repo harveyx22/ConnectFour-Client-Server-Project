@@ -9,6 +9,9 @@ using namespace std;
 
 class Connect4 {
 public:
+    int gamesPlayed;
+    int wins;
+
     Connect4();
     bool clientDrop(int dropChoice);
     int computerDrop();
@@ -18,6 +21,7 @@ public:
 
 private:
     char board[6][7];
+
     void restart();
 };
 

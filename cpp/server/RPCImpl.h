@@ -23,7 +23,7 @@ private:
     bool processConnectRPC(vector<string>& arrayTokens) const;
     Connect4* playConnect4RPC(vector<string>& arrayTokens);
     void playPieceRPC(Connect4* game, vector<string>& arrayTokens) const;
-    void checkStatsRPC() const;
+    void checkStatsRPC(Connect4* game) const;
     void processDisconnectRPC() const;
 
 };

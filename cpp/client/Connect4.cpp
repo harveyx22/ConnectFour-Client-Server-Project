@@ -64,3 +64,16 @@ bool Connect4::gameOver(int gameStatus) {
         return true;
     else return false;
 }
+
+/**
+ * Displays stats
+ * @param arrayTokens: Contains stats data from server.
+ */
+void Connect4::displayStats(vector<string>& arrayTokens) {
+    int gamesPlayed = stoi(arrayTokens[0]);
+    int wins = stoi(arrayTokens[1]);
+    int loss = stoi(arrayTokens[2]);
+    cout << "\nTotal number games played: " << gamesPlayed << endl;
+    cout << "Total wins: " << wins << endl;
+    cout << "Win rate: " << loss << "%" << endl;
+}
