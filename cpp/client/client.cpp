@@ -129,10 +129,8 @@ int main(int argc, char const *argv[]) {
 
     // Do a disconnect Message
     if (bConnect) {
-
         const char *disconnectRPC = "disconnect;";
         sendRPC(disconnectRPC, sock, arrayTokens);
-
     } else {
         printf("Exit without calling RPC");
     }

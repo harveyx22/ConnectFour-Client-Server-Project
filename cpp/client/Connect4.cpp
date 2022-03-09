@@ -57,19 +57,25 @@ bool Connect4::gameOver(int gameStatus) {
             break;
     }
 
-    string input;
+    string input = " ";
+
     printf("Enter \"y\" to play again. Enter anything else to exit. ");
+
     cin >> input;
-    if (input == "y" || input == "Y")
+
+    if (input == "y" || input == "Y") {
         return true;
-    else return false;
+    }
+
+    return false;
+
 }
 
 /**
  * Displays stats
  * @param arrayTokens: Contains stats data from server.
  */
-void Connect4::displayStats(vector<string>& arrayTokens) {
+void Connect4::displayStats(vector<string> &arrayTokens) {
     int gamesPlayed = stoi(arrayTokens[0]);
     int wins = stoi(arrayTokens[1]);
     int loss = stoi(arrayTokens[2]);
