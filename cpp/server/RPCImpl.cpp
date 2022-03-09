@@ -233,12 +233,12 @@ void RPCImpl::playPieceRPC(Connect4* game, vector<string>& arrayTokens) const {
 void RPCImpl::checkStatsRPC(Connect4* game) const {
     // Lock code while in use.
     pthread_mutex_lock(&myMutex);
-    if ((game->localWins/game->localGamesPlayed) > (globalObj.highestScore))
+    if (((game->localWins/game->localGamesPlayed) * 100) > (globalObj.highestScore))
         globalObj.highestScore = (game->localWins/game->localGamesPlayed) * 100;
 
     // Unlock.
     pthread_mutex_unlock(&myMutex);
-    
+
     string stats = to_string(game->localGamesPlayed).append(";");
     stats.append(to_string(game->localWins)).append(";");
     double winRate = round( (double)(globalObj.highestScore));
