@@ -9,8 +9,8 @@ using namespace std;
 
 class Connect4 {
 public:
-    double gamesPlayed;
-    double wins;
+    double localGamesPlayed;
+    double localWins;
 
     Connect4();
     bool clientDrop(int dropChoice);
@@ -22,6 +22,7 @@ public:
 
 private:
     char board[6][7];
+
 
     //void restart();
 };

@@ -12,6 +12,8 @@ using namespace std;
  * Constructor.
  */
 Connect4::Connect4() {
+    this->localGamesPlayed = 0;
+    this->localWins = 0;
     restart();
 }
 

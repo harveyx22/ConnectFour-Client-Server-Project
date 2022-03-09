@@ -138,6 +138,9 @@ int main(int argc, char const *argv[]) {
     // Terminate connection
     close(sock);
 
+    cout << endl;
+    cout << "Thank you for playing!" << endl;
+
     return 0;
 }
 
