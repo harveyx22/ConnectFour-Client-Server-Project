@@ -82,7 +82,7 @@ void Connect4::displayStats(vector<string> &arrayTokens) {
     int globalWinRate = stoi(arrayTokens[2]);
     cout << "\nYou played " << gamesPlayed << " games." << endl;
     cout << "You won " << wins << " games." << endl;
-    cout << "Your win rate is: " << round(wins/(gamesPlayed*1.0)*100) << "&" << endl;
+    cout << "Your win rate is: " << round(wins/(gamesPlayed*1.0)*100) << "%" << endl;
     cout << "The current best global win rate: " << globalWinRate << "%" << endl;
 
 }
