@@ -101,7 +101,5 @@ void RPCServer::ListenForClient() {
         printf("Launching thread.\n");
         int socket = m_socket;
         pthread_create(&thread_id, nullptr, initThread, (void*)&socket);
-        // TODO Probably should save thread_id into some type of array
-        // TODO Figure out how to close thread when client disconnects
     }
 }

@@ -5,24 +5,17 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
-//#include <bits/stdc++.h>
 #include <cmath>
 #include "RPCImpl.h"
 #include "Connect4.h"
 using namespace std;
 
+// Keeps track of highest score. Protect by mutex.
 typedef struct GlobalContext {
     double highestScore = 0;
 } GlobalContext;
 
 GlobalContext globalObj;
-
-//typedef struct LocalContext{
-//    double wins;
-//    double gamesPlayed;
-//} LocalContext;
-//
-//LocalContext localObj;
 
 extern pthread_mutex_t myMutex;
 
@@ -32,7 +25,6 @@ extern pthread_mutex_t myMutex;
  */
 RPCImpl::RPCImpl(int socket) {
     m_socket = socket;
-
     this->game = new Connect4();
 }
 
@@ -103,8 +95,7 @@ void RPCImpl::processRPC() {
         if (!bConnected && (strRPC == "connect")) {
             bConnected = processConnectRPC(arrayTokens);
         } else if (bConnected && strRPC == "playconnect4") {
-            //game =
-                    playConnect4RPC(arrayTokens);
+            playConnect4RPC(arrayTokens);
             playingGame = true;
         } else if (bConnected && playingGame && strRPC == "playpiece") {
             playPieceRPC(game, arrayTokens);
@@ -169,7 +160,6 @@ void RPCImpl::playConnect4RPC(vector<string>& arrayTokens)  {
     const int TURN_TOKEN = 1;
     int firstTurn = stoi(arrayTokens[TURN_TOKEN]);
 
-//    auto* game = new Connect4();    // Initialize new game.
     game->restart();
     // Check if computer goes first.
     if (firstTurn == 2)
@@ -184,11 +174,7 @@ void RPCImpl::playConnect4RPC(vector<string>& arrayTokens)  {
     // Send response back on our socket.
     sendResponse(szBuffer);
 
-    //pthread_mutex_lock(&myMutex);
     (game->localGamesPlayed)++;
-    //pthread_mutex_unlock(&myMutex);
-
-    //return game;
 }
 
 /**
@@ -213,9 +199,7 @@ void RPCImpl::playPieceRPC(Connect4* game, vector<string>& arrayTokens) const {
         if (game->checkFour(true)){
             // If client wins
             response = 9;
-            //pthread_mutex_lock(&myMutex);
             game->localWins++;
-            //pthread_mutex_unlock(&myMutex);
         }
         else if (game->fullBoard())
             // If board is full.
@@ -254,8 +238,7 @@ void RPCImpl::checkStatsRPC(Connect4* game) const {
 
     // Unlock.
     pthread_mutex_unlock(&myMutex);
-
-    //string totalGames = to_string(totalGamesPlayed).append(";");
+    
     string stats = to_string(game->localGamesPlayed).append(";");
     stats.append(to_string(game->localWins)).append(";");
     double winRate = round( (double)(globalObj.highestScore));
@@ -266,13 +249,6 @@ void RPCImpl::checkStatsRPC(Connect4* game) const {
 
     // Send response back on our socket
     sendResponse(szBuffer);
-
-
-
-    // Reset stats
-    //game->localGamesPlayed = 0;
-    //game->wins = 0;
-
 }
 
 /**
@@ -284,4 +260,6 @@ void RPCImpl::processDisconnectRPC() const {
 
     // Send response back on our socket
     sendResponse(szBuffer);
+
+    delete game;
 }

@@ -106,7 +106,7 @@ int main(int argc, char const *argv[]) {
             gameStatus = stoi(arrayTokens[1]);
 
             if (gameStatus == 8)
-                printf("You selected a column that is full. Please try again");
+                printf("\nYou selected a column that is full. Please try again\n");
             else if (gameStatus >= 1 && gameStatus <= 7)
                 cout << "The computer has selected column " << gameStatus << ".\n";
 
