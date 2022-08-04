@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/Connect4.cpp" "/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug/CMakeFiles/client.dir/Connect4.cpp.o"
-  "/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/client.cpp" "/Users/FelixMinhVu/Documents/GitHub/ConnectFour-Client-Server-Project/cpp/client/cmake-build-debug/CMakeFiles/client.dir/client.cpp.o"
+  "/tmp/tmp.Pzm3gPIgjD/Connect4.cpp" "/tmp/tmp.Pzm3gPIgjD/cmake-build-debug/CMakeFiles/client.dir/Connect4.cpp.o"
+  "/tmp/tmp.Pzm3gPIgjD/client.cpp" "/tmp/tmp.Pzm3gPIgjD/cmake-build-debug/CMakeFiles/client.dir/client.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

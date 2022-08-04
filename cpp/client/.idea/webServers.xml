@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="c4b7a9d1-5092-4990-805e-849933ef782c" name="SU" url="http://cs1.seattleu.edu">
-        <fileTransfer rootFolder="/home/st/pharvey/cpsc5042/ClientR" accessType="SFTP" host="cs1.seattleu.edu" port="22" sshConfigId="54d23572-d555-44c6-929f-a212e8023fe5" sshConfig="pharvey@cs1.seattleu.edu:22 password">
+        <fileTransfer rootFolder="/home/st/pharvey/cpsc5042/ClientR" accessType="SFTP" host="cs1.seattleu.edu" port="22" sshConfigId="747ae813-dec4-4f4c-8fbc-e85800f5c70a" sshConfig="wzhang1@cs1.seattleu.edu:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
